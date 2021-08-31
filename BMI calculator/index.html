@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        #result{
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="col-md-5 mx-auto bg-light p-5 my-5 rounded shadow">
+        <h1 class="text-center text-primary">BMI Calculator</h1>
+
+        <form method="post" id="bmiForm">
+            <div class="form-group mb-3">
+                <label for="height">Height:</label>
+                <input type="number" class="form-control" name="height" id="height" min="1" placeholder="Height in cm">
+            </div>  
+            <div class="form-group mb-3">
+                <label for="weight">Weight:</label>
+                <input type="number" class="form-control" name="weight" id="weight" min="1" placeholder="Weight in kg">
+            </div>    
+            <button type="submit" class="btn btn-primary w-100 btn-lg">Calculate</button>
+        </form>
+
+        <h1 class="text-center mt-3" id="result"></h1>
+
+        <div class="mt-4">
+            <h4 class="text-primary">BMI Guide</h4>
+            <p class="my-1">Under Weight = Less than 18.5</p>
+            <p class="my-1">Normal Range = 18.5 to 25</p>
+            <p class="my-1">OverWeight = Greater than 25</p>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

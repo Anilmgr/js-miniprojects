@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        li{
+          cursor: pointer;  
+        }
+        li:hover{
+            background-color: rgba(204, 204, 204, 0.692);
+        }
+    </style>
+</head>
+<body class="bg-info">
+
+    <div class="col-md-6 mx-auto bg-light rounded my-5 p-5">   
+        <h1 class="text-center text-success pb-3">TODO APP</h1>
+
+        <form id="todoForm" action="http://google.com" class="mb-4">
+            <div class="form-group row">
+                <div class="col-md-9">
+                    <input class="form-control" type="text" name="task" id="task" placeholder="Enter task...">
+                </div>
+                <div class="col-md-3">
+                    <button class="btn w-100 btn-success">save</button>
+                </div>
+            </div>
+        </form>
+
+        <ul class="list-group" id="todoList">
+        </ul>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
